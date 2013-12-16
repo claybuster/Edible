@@ -1,0 +1,55 @@
+import java.util.Random;
+public class Chicken implements Edible
+{
+    public int eggsProduced;
+    public int age;
+    public int cal;
+    public int fat;
+    
+    public Chicken()
+    {
+        eggsProduced = 0;
+        age = 0;
+        cal = 0;
+        fat = 0;
+    }
+    
+    public Chicken(int eggsProduced, int age, int cal, int fat)
+    {
+        this.eggsProduced = eggsProduced;
+        this.age = age;
+        this.cal = cal;
+        this.fat = fat;
+    }
+    
+    public int getEggsProduced()
+    {
+        return eggsProduced;
+    }
+    
+    public int getAge()
+    {
+        return age;
+    }
+    
+    public int getCaloriesPerServing()
+    {
+        return cal;
+    }
+    
+    public int getFatPerServing()
+    {
+        return fat;
+    }
+    
+    public void makeNoise()
+    {
+        System.out.println("The Chicken Is Making Noise");
+    }
+
+    public void layEggs()
+    {
+        Random randGen = new Random();
+        eggsProduced = eggsProduced + randGen.nextInt(4) + 1;
+    }
+}
