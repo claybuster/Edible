@@ -1,0 +1,35 @@
+Enter file contents herepublic class Apple implements Edible
+{
+    public String type;
+    public int cal;
+    public int fat;
+    
+    public Apple()
+    {
+        type = "default";
+        cal = 0;
+        fat = 0;
+    }
+    
+    public Apple(String type, int cal, int fat)
+    {
+        this.type = type;
+        this.cal = cal;
+        this.fat = fat;
+    }
+    
+    public String getType()
+    {
+        return type;
+    }
+    
+    public int getCaloriesPerServing()
+    {
+        return cal;
+    }
+    
+    public int getFatPerServing()
+    {
+        return fat;
+    }
+}
