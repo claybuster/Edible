@@ -1,0 +1,33 @@
+public class EdibleDriver
+{
+    public static void main(String args[])
+    {
+        Pasta Pasta = new Pasta("Angel Hair", 500, 12);
+        Chicken Chicken = new Chicken(3, 2, 350, 11);
+        Apple Apple = new Apple("Red Delicious", 120, 0);
+        
+        System.out.println("Pasta");
+        System.out.println("Pasta Type: " + Pasta.getType());
+        System.out.println("Pasta Calories Per Serving: " + Pasta.getCaloriesPerServing());
+        System.out.println("Pasta Fat Per Serving: " + Pasta.getFatPerServing() + "\n");
+               
+        System.out.println("Chicken");
+        System.out.println("Eggs Produced: " + Chicken.getEggsProduced());
+        System.out.println("Age: " + Chicken.getAge());
+        System.out.println("Chicken Calories Per Serving: " + Chicken.getCaloriesPerServing());
+        System.out.println("Chicken Fat Per Serving: " + Chicken.getFatPerServing() + "\n");
+        
+        System.out.println("New Chicken");
+        Chicken.layEggs();
+        Chicken.makeNoise();
+        System.out.println("Eggs Produced: " + Chicken.getEggsProduced());
+        System.out.println("Age: " + Chicken.getAge());
+        System.out.println("Chicken Calories Per Serving: " + Chicken.getCaloriesPerServing());
+        System.out.println("Chicken Fat Per Serving: " + Chicken.getFatPerServing() + "\n");
+        
+        System.out.println("Apple");
+        System.out.println("Apple Type: " + Apple.getType());
+        System.out.println("Apple Calories Per Serving: " + Apple.getCaloriesPerServing());
+        System.out.println("Apple Fat Per Serving: " + Apple.getFatPerServing() + "\n");
+    }
+}
