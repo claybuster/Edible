@@ -1,0 +1,35 @@
+Enter file contents herepublic class Pasta implements Edible
+{
+    public String type;
+    public int cal;
+    public int fat;
+    
+    public Pasta()
+    {
+        type = "default";
+        cal = 0;
+        fat = 0;
+    }
+    
+    public Pasta(String type, int cal, int fat)
+    {
+        this.type = type;
+        this.cal = cal;
+        this.fat = fat;
+    }
+    
+    public String getType()
+    {
+        return type;
+    }
+    
+    public int getCaloriesPerServing()
+    {
+        return cal;
+    }
+    
+    public int getFatPerServing()
+    {
+        return fat;
+    }
+}
